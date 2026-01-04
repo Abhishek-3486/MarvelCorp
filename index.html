@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Marvel Corp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">MARVEL CORP</h1>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero"
+  style="background-image: url('images/hero.jpg');">
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-content">
+    <h2>Saving the World, One Mission at a Time</h2>
+    <p>Elite Superhero Services for a Safer Tomorrow</p>
+    <button onclick="navigate('services.html')">Explore Services</button>
+  </div>
+
+</section>
+
+
+<section class="cards">
+  <div class="card">
+    <img src="images/ironman.jpg" />
+    <h3>Advanced Tech</h3>
+    <p>Powered by Stark-level innovation.</p>
+  </div>
+
+  <div class="card">
+    <img src="images/captain.jpg" />
+    <h3>Global Protection</h3>
+    <p>Shielding the planet from all threats.</p>
+  </div>
+
+  <div class="card">
+    <img src="images/thor.jpg" />
+    <h3>Cosmic Defense</h3>
+    <p>Protection beyond Earth.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Marvel Corp. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

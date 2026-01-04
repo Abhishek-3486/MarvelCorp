@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+.navbar {
+  background: #b30000;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.logo {
+  font-size: 26px;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.7);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: black;
+  border: 1px solid red;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.card {
+  background: #111;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.4s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.page {
+  padding: 60px;
+}
+
+.service-box {
+  background: #111;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 5px solid red;
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  background: #b30000;
+}
+
+.contact-form {
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.contact-form button {
+  background: red;
+  padding: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+ /* ---------- HAMBURGER ---------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* ---------- MOBILE VIEW ---------- */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #b30000;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .page {
+    padding: 30px;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+}
+
+
+
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
